@@ -21,7 +21,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import React, {useEffect, useState, useRef} from 'react';
 import { Outlet, useLocation, useNavigate, Link as RouterLink } from 'react-router-dom';
-import { drawerMenu, popMenu } from '../../constants/menu';
+
 import { useSelector } from "react-redux";
 import { appSelector } from '../../redux/appRedux';
 import main from "../../styles/main";

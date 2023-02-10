@@ -9,14 +9,14 @@ function Maps() {
   return (
     
     <div style={{  width: '120vh' }}>
-        <MapContainer center={[51.505, -0.09]} zoom={15} scrollWheelZoom={false} style={{ height: '90vh'}}>
+        <MapContainer center={[-29.4131,  -66.8558]} zoom={7} scrollWheelZoom={false} style={{ height: '90vh'}}>
                     <TileLayer
                         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                     />
-                <Marker position={[51.505, -0.09]}>
+                <Marker position={[-29.4131,  -66.8558]}>
                     <Popup>
-                        Son Konum
+                        La Rioja Capital
                     </Popup>
                 </Marker>
             </MapContainer>

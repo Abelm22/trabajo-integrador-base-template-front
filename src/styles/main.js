@@ -14,14 +14,9 @@ export default {
     justifyContent: 'center'
   },
   dashboardLayout: {
-    /* root: {
-      display: 'flex',
-      minHeight: '100vh',
-      overflow: 'hidden'
-    },*/
     root: {
       minHeight: '100vh',
-      backgroundImage: `url(${require('./../assets/images/pnt.jpg')})`,
+      backgroundImage: `url(${require('./../assets/images/bg.jpg')})`,
       backgroundRepeat: 'no-repeat',
       backgroundSize: 'cover',
     },

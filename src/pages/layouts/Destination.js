@@ -5,7 +5,7 @@ import Destinations from "../destinations/Destinations";
 import Maps from "../destinations/Maps";
 
 
-// Images
+
 
 
 function Destination() {

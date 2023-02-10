@@ -13,7 +13,7 @@ const Routes = () => {
             { path: '', element: <Corridors/> },
         ]
       },
-      {path: '/destinations', element: <Destination/>},
+      {path: '/destinations/:id', element: <Destination/>},
       {path: '/404', element: <NotFound/>},
       {path:'*', element: <Navigate to="/404" replace/>},
       {path:'/login', element: <Navigate to="/404" replace/>}

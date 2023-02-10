@@ -1,8 +1,8 @@
 import axios from 'axios';
 
 
-const BASE_URL = "https://pokeapi.co/api/v2"
-export const IMG_URL = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/"
+const BASE_URL = "http://localhost:3000"
+
 
 
 const headers = ()=>{
@@ -21,7 +21,7 @@ const POST = async (url, payload) => {
         res = await axios.post(url, payload, headers());
         return (res && res.data) || null
     } catch (error) {
-        throw (error && error.response.data.error) || errorMessage
+        throw (error ) || errorMessage
     }
 };
 
@@ -31,7 +31,7 @@ const GET = async (url) => {
         res = await axios.get(url, headers());
         return (res && res.data) || null
     } catch (error) {
-        throw (error && error.response.data.error) || errorMessage
+        throw (error ) || errorMessage
     }
 };
 
@@ -41,7 +41,7 @@ const PATCH = async (url, payload) => {
         res = await axios.patch(url, payload, headers());
         return (res && res.data) || null
     } catch (error) {
-        throw (error && error.response.data.error) || errorMessage
+        throw (error ) || errorMessage
     }
 };
 
@@ -51,7 +51,7 @@ const DELETE = async (url) => {
         res = await axios.delete(url, headers());
         return (res && res.data) || null
     } catch (error) {
-        throw (error && error.response.data.error) || errorMessage
+        throw (error ) || errorMessage
     }
 };
 
@@ -68,7 +68,7 @@ export default {
     GET,
     PATCH,
     DELETE,
-    pokemons:`${BASE_URL}/pokemon`
+    getCorridors:`${BASE_URL}/corridors`
 };
     
 
